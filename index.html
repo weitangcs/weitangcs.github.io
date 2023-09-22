@@ -83,6 +83,29 @@
         margin-top: -0.8em; /* Remove the default margin above the first list item */
     }
 </style>
+
+
+<style>
+    ol.unordered-list {
+        list-style-type: disc; /* Remove default numbering */
+        counter-reset: list-counter; /* Initialize a counter */
+    }
+
+    ol.unordered-list li {
+        counter-increment: list-counter; /* Increment the counter for each list item */
+        position: relative; /* Set position to relative to position the pseudo-element */
+        margin-bottom: 4px;
+    }
+
+    ol.unordered-list li::before {
+        position: absolute; /* Absolute position the pseudo-element */
+        left: -1.5em; /* Move the pseudo-element to the left of the list item */
+    }
+    
+    ol.unordered-list li:first-child {
+        margin-top: -0.8em; /* Remove the default margin above the first list item */
+    }
+</style>
   
   <title>Wei Tang - Columbia University</title>
   <meta name="author" content="Wei Tang" />
@@ -171,7 +194,17 @@
   <br>
 
   <strong>I am on the 2023-2024 job market</strong>! 
-  My <a href="https://wtang.org/job-market/CV_2023_Fall.pdf" style="text-decoration:none;color: #003399">  [CV]</a> 
+  My <a href="https://wtang.org/job-market/CV_2023_Fall.pdf" style="text-decoration:none;color: #003399">  [CV]</a>
+  <br>
+  Upcoming presentations:
+      <ol class="unordered-list">
+        <li>Oct 06 Harvard EconCS Seminar; </li>
+        <li>INFORMS Annul Meeting --
+            Session TC67 (Applied Online Learning and Decision-making) <br>
+            Tue, Oct 17, 2023, 12:45 PM - 2:00 PM; CC-West 104A; Talk 2 <br>
+            Dynamic Pricing and Learning with Bayesian Persuasion
+ </li>
+    </ol>
 
   
 
@@ -195,18 +228,6 @@
     </p>
   </li>
 
-
-
-  <li>
-    <p>   Dynamic Pricing and Learning with Bayesian Persuasion
-        <br>
-          <small>  (&#945-&#946). </small> Shipra Agrawal, Yiding Feng, Wei Tang.
-        <br>
-          <a href="papers/DynamicPricingBP'23.pdf" style="text-decoration:none;color: #003399"> [full version]</a> 
-          <a href="https://arxiv.org/pdf/2304.14385.pdf" style="text-decoration:none;color: #003399"> [arxiv]</a> 
-        <br>
-    </p>
-  </li>
 
 
 
@@ -238,6 +259,35 @@
 </div>
 
 <ul>
+
+
+  <li>
+    <p>   Dynamic Pricing and Learning with Bayesian Persuasion
+        <br>
+          <small>  (&#945-&#946). </small> Shipra Agrawal, Yiding Feng, Wei Tang.
+        <br>
+          <a href="papers/DynamicPricingBP'23.pdf" style="text-decoration:none;color: #003399"> [full version]</a> 
+          <a href="https://arxiv.org/pdf/2304.14385.pdf" style="text-decoration:none;color: #003399"> [arxiv]</a> 
+        <br>
+        <strong>NeurIPS 2023: </strong>  
+        The 37th Conference on Neural Information Processing Systems 
+        <br>
+          Under preparation for <i>Operations Research</i>
+        <br>
+    </p>
+  </li>
+
+
+  <li>
+    <p>   HAIDNet: Encoding Human Behavior in Automated Information Design
+        <br>
+          Guanghui Yu, Wei Tang, Saumik Narayanan, and Chien-Ju Ho.
+        <br>
+        <strong>NeurIPS 2023: </strong>  
+        The 37th Conference on Neural Information Processing Systems
+    </p>
+  </li>
+
 
   <li>
     <p>   
