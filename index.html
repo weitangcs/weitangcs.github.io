@@ -42,6 +42,16 @@
    
   }
 
+  ul.no-bullets {
+        list-style-type: none; /* Removes the bullets */
+        padding: 0; /* Removes padding */
+        margin: 0 0 0 25px; /* Removes margins */
+    }
+  ul.w-bullets {
+        padding: 0; /* Removes padding */
+        margin: 0 0 0 40px; /* Removes margins */
+    }
+
   .projectname
   {
   margin-top: 0.0em;
@@ -54,8 +64,9 @@
 
   .container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   }
+
       
      
   </style>
@@ -140,28 +151,35 @@
 
 <body style="background-color:WhiteSmoke;">
 
+<nav align=right>
+  <a href="#about-me">Home</a> |
+  <a href="#publications">Publications</a> |
+  <a href="#service">Service</a> |
+  <a href="#misc">Misc.</a>
+</nav>
+
 <font face='Arial'>
 
   <br> 
   <div class="container">
     <table width="70%"> 
     <tr>
-       <td align=left; width=130px; style="text-align: center; " > 
-        <strong style="font-size: 320%;color:#003399;font-family: 'Nunito Sans'"> Wei Tang </strong>
-        <!-- #065BAC  -->
+      <td width=80px, style="text-align: center;"><img src="img/profile_web.png" width="185.442" height="182.28" ></td>   
+      <td align=left; width=130px; style="text-align: left; " > 
+        <div style="font-size: 320%;color:#003399; font-family: 'Helvetica' "> Wei Tang </div>
       </td>
-       <!-- <td width=80px><img src="http://www.cse.wustl.edu/~w.tang/profile_updated.jpeg 04335F" width="120.232" height="150.136" ></td>  -->
-       <td width=80px, style="text-align: center;"><img src="img/profile_web.png" width="185.442" height="182.28" ></td>   
     </tr>
     </table> 
   </div>
 
 
+
+
 <a name="about"></a>
 <div id="about-me">
-  <h2> <font face='Georgia'>  About Me</h2>
+  <h2> <strong > <font face='Helvetica'>  About Me</h2> </strong>
   
-  <p align="justify"> 
+  <p > 
   I am a postdoctoral fellow at the
   <a href="https://datascience.columbia.edu" style="text-decoration: none;color: #003399">Data Science Institute</a>, 
   <a href="https://www.columbia.edu" style="text-decoration: none;color: #003399">Columbia University</a>,
@@ -173,18 +191,35 @@
   Tianjin University</a>, China. 
   </p>  
 
-  <p align="justify"> 
+  <p > 
     I am interested in developing algorithmic solutions for <strong> dynamic, uncertain, and human-centric </strong> decision-making systems.
+    My interests include sequential decision-making (with uncertainty),  reinforcement learning, information design, socially responsible machine learning, and human-AI interaction.  
     My research spans areas of machine learning, algorithmic economics, and behavioral (social) sciences.
-    My interests include sequential decision-making (with uncertainty),  reinforcement learning, information design, socially responsible machine learning and human-AI interaction.  
   </p>
 
-  <p align="justify"> 
-  <strong> Updates:</strong>
-  I will be joining as an assistant professor in Department of Decisions, Operations and Technology of the Chinese University of Hong Kong in the 2024 Fall. 
-  </p>
+  
   Email: wt2359 at columbia dot edu
 
+</div>
+
+
+<!-- ============================================================ -->
+<div id = "news">
+  <h2><strong ><font face='Helvetica'> What's New?</h2> </strong >
+  <ul class="w-bullets">
+    <li>
+      <strong> New Papers:</strong>
+      Check our new works!
+      (1) <a href="https://arxiv.org/pdf/2402.12562.pdf" style="text-decoration:none;color: #003399"> 
+      dynamic pricing with long-term reference effects;</a>  
+      (2) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4861024" style="text-decoration:none;color: #003399"> 
+       competitive information design when senders have prior heterogeneity. </a>
+    </li>
+    <li>
+      <strong> Updates:</strong>
+      I will be joining as an assistant professor in Department of Decisions, Operations and Technology of the Chinese University of Hong Kong in the 2024 Fall. 
+    </li>
+  </ul>
 </div>
 
 <!-- ============================================================ -->
@@ -213,8 +248,8 @@
 
 
 <!-- ============================================================ -->
-<div>
-<h2><font face='Georgia'> Conference Publications</h2>
+<div id = "publications">
+<h2><strong > <font face='Helvetica'> Conference Publications</h2> </strong>
 </div>
 
 <ul>
@@ -238,7 +273,7 @@
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4861024" style="text-decoration:none;color: #003399"> 
       Competitive Information Design with Asymmetric Senders</a>        
         <br>
-          <small>  (&#945-&#946). </small> Zhicheng Du, Wei Tang, Zihe Wang, Shuo Zhang.
+          <small>  (&#945-&#946). </small> Zhicheng Du, Wei Tang, Zihe Wang, and Shuo Zhang.
         <br>
         <strong>EC 2024: </strong> 
         The 25th ACM conference on Economics and Computation
@@ -252,7 +287,7 @@
       Performative Prediction with Bandit Feedback: Learning through Reparameterization </a>
 
         <br>
-          Yatong Chen, Wei Tang, Chien-Ju Ho and Yang Liu.
+          Yatong Chen, Wei Tang, Chien-Ju Ho, and Yang Liu.
         <br>
         <strong>ICML 2024: </strong>  
         The 41st International Conference on Machine Learning
@@ -264,7 +299,7 @@
       
       Rationality-Robust Information Design: Bayesian Persuasion under Quantal Response</a>
         <br>
-          <small>  (&#945-&#946). </small> Yiding Feng, Chien-Ju Ho, Wei Tang.   
+          <small>  (&#945-&#946). </small> Yiding Feng, Chien-Ju Ho, and Wei Tang.   
         <br>
         <strong>SODA 2024: </strong>  
         The 35th ACM-SIAM Symposium on Discrete Algorithms
@@ -283,7 +318,7 @@
     <p>   <a href="https://arxiv.org/pdf/2304.14385.pdf" style="text-decoration:none;color: #003399">  
       Dynamic Pricing and Learning with Bayesian Persuasion</a> 
         <br>
-          <small>  (&#945-&#946). </small> Shipra Agrawal, Yiding Feng, Wei Tang.
+          <small>  (&#945-&#946). </small> Shipra Agrawal, Yiding Feng, and Wei Tang.
         <br>
         <strong>NeurIPS 2023: </strong>  
         The 37th Conference on Neural Information Processing Systems 
@@ -311,7 +346,7 @@
     <p>   
       <a href="https://arxiv.org/pdf/2103.03769.pdf" style="text-decoration:none;color: #003399">  Competitive Information Design for Pandora's Box</a> 
         <br>
-          <small>  (&#945-&#946). </small> Bolin Ding, Yiding Feng, Chien-Ju Ho, Wei Tang, Haifeng Xu. 
+          <small>  (&#945-&#946). </small> Bolin Ding, Yiding Feng, Chien-Ju Ho, Wei Tang, and Haifeng Xu. 
         <br>
         <strong>SODA 2023: </strong>  
         The 34th ACM-SIAM Symposium on Discrete Algorithms
@@ -328,7 +363,7 @@
     <p>  
       <a href="papers/BayesianRecommendation'23.pdf" style="text-decoration:none;color: #003399"> Online Bayesian Recommendation with No Regret </a> 
         <br>
-          <small>  (&#945-&#946). </small> Yiding Feng, Wei Tang, Haifeng Xu. 
+          <small>  (&#945-&#946). </small> Yiding Feng, Wei Tang, and Haifeng Xu. 
         <br>
         <strong>EC 2022: </strong> 
         The 23rd ACM conference on Economics and Computation
@@ -505,10 +540,29 @@
 </ul>
 
 
+<!-- ============================================================ -->
+<div id = "service">
+  <h2><strong ><font face='Helvetica'> Services</h2> </strong >
+  Conference Program Committees (or Formal Reviewer):<br>
+  <ul class="no-bullets">
+    <li>2024: ICML, EC, NeurIPS</li>
+    <li>2023: FAccT, ICML, NeurIPS</li>
+    <li>2022: ICLR, ICML, FAccT, UAI, SAGT, NeurIPS, WINE</li>
+    <li>2021: AAMAS, AAAI, AISTATS, NeurIPS</li>
+  </ul>
+  Journal Referee: 
+  <ul class="w-bullets">
+    <li>Journal of Machine Learning Research (JMLR), Machine Learning Journal (MLJ), ACM Transactions on Economics and Computation (TEAC)</li>
+    <li>Operations Research (OR), Manufacturing & Service Operations Management (MSOM)</li>
+    <li>Games and Economic Behavior (GEB)</li>
+    <li>Journal of the American Statistical Association (JASA)</li>
+  </ul>
+</div>
+
 
 <!-- ============================================================ -->
-<div>
-<h2><font face='Georgia'>  Misc.</h2>
+<div id = "misc">
+<h2><strong ><font face='Helvetica'>  Misc.</h2> </strong >
 </div>
 It's also been my good fortune to be working with: 
 <a href="https://yatongchen.github.io/" style="text-decoration:none;color: #003399"> Yatong Chen</a>,
