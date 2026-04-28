@@ -1,765 +1,393 @@
-<html>
-<!-- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-134166397-1', 'auto');
-  ga('send', 'pageview');
-
-</script> -->
-  
+<!doctype html>
+<html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXECP5R9QJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EXECP5R9QJ');
-</script>
-
-
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-
-  <style type="text/css">
-      .social-icons li a {color: #323232 }
-      .social-icons li a:hover, .social-icons li a:focus { color: #DB522F } 
-      .list-inline>li{display:inline-block;padding-right:5px;padding-left:5px;}
-          
-          .noborderimage a, .noborderimage a:link, .noborderimage a:active, .noborderimage a:visited, .noborderimage a:hover{
-    border: 0px;
-    text-decoration: none;
-    border-style: dotted solid;
-          }     
-          
-  .wikilink img, .wikilink a img {
-   border: 0;
-   border-style: none;
-   border: none;
-   
-  }
-
-  ul.no-bullets {
-        list-style-type: none; /* Removes the bullets */
-        padding: 0; /* Removes padding */
-        margin: 0 0 0 25px; /* Removes margins */
-    }
-  ul.w-bullets {
-        padding: 0; /* Removes padding */
-        margin: 0 0 0 40px; /* Removes margins */
-    }
-
-  .projectname
-  {
-  margin-top: 0.0em;
-  margin-bottom: 0.2em;
-  border-style: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 16px;
-  }
-
-  .container {
-  display: flex;
-  justify-content: center;
-  }
-
-      
-     
-  </style>
-    
-    
-<style>
-    /*margin-bottom: 1px;*/
-    ol.custom-list {
-        list-style-type: none; /* Remove default numbering */
-        counter-reset: list-counter; /* Initialize a counter */
-    }
-
-    ol.custom-list li {
-        counter-increment: list-counter; /* Increment the counter for each list item */
-        position: relative; /* Set position to relative to position the pseudo-element */
-        margin-bottom: 4px;
-        text-align: justify; /* Justify the text */
-    }
-
-    ol.custom-list li::before {
-        content: "(" counter(list-counter) ") "; /* Display the counter value in parentheses */
-        position: absolute; /* Absolute position the pseudo-element */
-        left: -1.5em; /* Move the pseudo-element to the left of the list item */
-    }
-    
-    ol.custom-list li:first-child {
-        margin-top: -0.8em; /* Remove the default margin above the first list item */
-    }
-
-</style>
-
-
-<style>
-    ol.unordered-list {
-        list-style-type: disc; /* Remove default numbering */
-        counter-reset: list-counter; /* Initialize a counter */
-    }
-
-    ol.unordered-list li {
-        counter-increment: list-counter; /* Increment the counter for each list item */
-        position: relative; /* Set position to relative to position the pseudo-element */
-        margin-bottom: 4px;
-    }
-
-    ol.unordered-list li::before {
-        position: absolute; /* Absolute position the pseudo-element */
-        left: -1.5em; /* Move the pseudo-element to the left of the list item */
-    }
-    
-    ol.unordered-list li:first-child {
-        margin-top: -0.8em; /* Remove the default margin above the first list item */
-    }
-</style>
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Wei Tang">
   <title>Wei Tang</title>
-  <meta name="author" content="Wei Tang" />
-  <!-- <link rel="stylesheet" href="plain.css" type="text/css"/> -->
+  <link rel="stylesheet" href="redesign.css">
 
-  <link rel="stylesheet" href="plain.css" type="text/css" />
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
-  
-  <link href="thickbox/thickbox.css" type="text/css" rel="stylesheet" media="screen"/>
-    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXECP5R9QJ"></script>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-134166397-1', 'auto');
-  ga('send', 'pageview');
- </script>
-
-  
-
-<script src="lightbox/js/jquery-1.10.2.min.js"></script>
-<script src="lightbox/js/lightbox-2.6.min.js"></script>
-<link   rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
-
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EXECP5R9QJ');
+  </script>
 </head>
 
-
-<body style="background-color:WhiteSmoke;">
-
-<!-- <nav align=right>
-  <a href="#about-me">Home</a> |
-  <a href="#publications">Publications</a> |
-  <a href="#service">Service</a> |
-  <a href="#misc">Misc.</a>
-</nav> -->
-
-<font face='Arial'>
-
-  <br> 
-  <div class="container">
-    <table width="70%"> 
-    <tr>
-      <td width=80px, style="text-align: center;"><img src="img/profile_web.png" width="185.442" height="182.28" ></td>   
-      <td align=left; width=130px; style="text-align: left; " > 
-        <div style="font-size: 320%;color:#003399; font-family: 'Helvetica' "> Wei Tang </div>
-      </td>
-    </tr>
-    </table> 
-  </div>
-
-
-
-
-<a name="about"></a>
-<div id="about-me">
-  <h2> <strong > <font face='Helvetica'>  About Me</h2> </strong>
-  
-  I am an assistant professor in Department of Decisions, Operations and Technology of the Chinese University of Hong Kong. 
-  Before this, I was a postdoctoral fellow at the
-  <a href="https://datascience.columbia.edu" style="text-decoration: none;color: #003399">Data Science Institute</a>, 
-  <a href="https://www.columbia.edu" style="text-decoration: none;color: #003399">Columbia University</a>,
-  mentored by 
-  <a href="http://www.columbia.edu/~sa3305/" style="text-decoration: none;color: #003399">Shipra Agrawal</a>.
-  I completed my Ph.D. in Computer Science at <a href="http://www.wustl.edu" style="text-decoration:none; color: #003399"> Washington University in St. Louis</a>,
-    where I was fortunate to be advised by <a href="http://chienjuho.com/" style="text-decoration:none;color: #003399"> Chien-Ju Ho</a>.
-  I received my bachelor degree from <a href="http://www.tju.edu.cn/english/" style="text-decoration: none;color: #003399"> 
-  Tianjin University</a>, China. 
-  </p>  
-
-  <p > 
-    I am interested in the theoretical aspects of the  <strong>agentic decision-making</strong>, where humans, algorithms, or both act as decision-makers.
-    A typtical question I explore is, for example, how to (efficiently and effectively) design or provide information/predictions to help humans/algorithms make desired decisions in complex environments.
-    <!-- developing algorithmic solutions for <strong> dynamic, uncertain, and human-centric </strong> decision-making systems. -->
-  </p>  
-
-  <p >
-    My interests include sequential decision-making (with uncertainty),  reinforcement learning, information design, socially responsible machine learning, and human-AI interaction.  
-    My research spans areas of machine learning, algorithmic economics, and behavioral (social) sciences.
-  </p>
-  
-
-  Email: weitang at cuhk dot edu dot hk
-
-  <p >
-    <strong>Prospective students:</strong> I am looking for students and if you are interested in working with me, please kindly send me an email with your CV.
-  </p>
-
-
-</div>
-
-
-<!-- ============================================================ -->
-<div id = "news">
-  <h2><strong ><font face='Helvetica'> What's New?</h2> </strong >
-  <ul >
-
-    <li>
-      [12/2025] 
-      I am attending NeurIPS 2025, San Diego! 
-      After that, I am attending <a href="https://wine2025.cs.rutgers.edu/" style="text-decoration:none;color: #003399"> 
-      WINE 2025</a> where we are organzing a tutorial 
-      on 
-      "<a href="https://sites.google.com/view/infor-design-calibration/home" style="text-decoration:none;color: #003399">Information Design Perspective on Calibration</a>."
-      
-    </li>
-
-
-    <li>
-      [10/2024] 
-      Works to be presented INFORMS'24 (Come and Say Hi!):
-      (1) dynamic pricing with long-term reference effects (given by Shipra); 
-      (2) rationality-robust information design;
-      (3) dynamic pricing with Bayesian persuasion.
-    </li>
-
-    <li>
-      [09/2024] 
-      Check our new working paper about <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4950758" style="text-decoration:none;color: #003399"> 
-      how to design confusion matrix for downstream decision-making</a>;
-      and the recent NeurIPS'24 work about
-      <a href="https://arxiv.org/pdf/2409.18269" style="text-decoration:none;color: #003399"> 
-      the robustness of Prophet inequality to strategic reward signaling</a>.
-    </li>
-
-    <li>
-      [05/2024] 
-      Check our recent works!
-      (1) <a href="https://arxiv.org/pdf/2402.12562.pdf" style="text-decoration:none;color: #003399"> 
-      dynamic pricing with long-term reference effects;</a>  
-      (2) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4861024" style="text-decoration:none;color: #003399"> 
-       competitive information design when senders have prior heterogeneity. </a>
-    </li>
-<!--     <li>
-      [04/2024] 
-      I will be joining as an assistant professor in Department of Decisions, Operations and Technology of the Chinese University of Hong Kong in the 2024 Fall. 
-    </li> -->
-  </ul>
-</div>
-
-<!-- ============================================================ -->
-
-<div>
-<h2><strong ><font face='Helvetica'>  Working Paper</h2> </strong>
-</div>
-<ul> 
-
-
-  <li>
-    <p>   
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5397901" style="text-decoration:none;color: #003399"> 
-      Explainable Information Design
-
-    </a>        
-        <br>
-          <small>  (&#945-&#946). </small> Yiling Chen, Tao Lin, Wei Tang, and Jamie Tucker-Foltz.
-<!--         <br>
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5204866" style="text-decoration:none;color: #003399"> [SSRN]</a> -->
-    </p>
-  </li> 
-
-  <li>
-    <p>   
-      <a href="https://arxiv.org/pdf/2507.17187" style="text-decoration:none;color: #003399"> 
-      Optimal Calibrated Signaling in Digital Auctions
-    </a>        
-        <br>
-          <small>  (&#945-&#946). </small> Zhicheng Du, Wei Tang, Zihe Wang, and Shuo Zhang.
-<!--         <br>
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5204866" style="text-decoration:none;color: #003399"> [SSRN]</a> -->
-    </p>
-  </li> 
-
-
-
-  <li>
-    <p>   
-      <a href="https://arxiv.org/pdf/2507.12094" style="text-decoration:none;color: #003399"> 
-      Measuring Informativeness Gap of (Mis) Calibrated Predictors
-    </a>        
-        <br>
-          <small>  (&#945-&#946). </small> Yiding Feng, Wei Tang.
-<!--         <br>
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5204866" style="text-decoration:none;color: #003399"> [SSRN]</a> -->
-    </p>
-  </li> 
-
-
-  <li>
-      <p>   
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5150007" style="text-decoration:none;color: #003399"> 
-      Simple Delay-Oblivious Policies Are Robust: Overbooking with Delayed Purchases
-    </a>        
-        <br>
-          <small>  (&#945-&#946). </small> Yiding Feng, Puping Jiang, Wei Tang.
-    </p>
-  </li> 
-
-
-</ul>
-
-
-<!-- ============================================================ -->
-<div id = "publications">
-<h2><strong > <font face='Helvetica'> Conference Publications</h2> </strong>
-</div>
-
-<ul>
-
-
-  <li>
-    <p>   
-      <a href="https://arxiv.org/pdf/2504.03211" style="text-decoration:none;color: #003399"> 
-      Persuasive Calibration
-    </a>  
-        <br>
-          <small>  (&#945-&#946). </small> Yiding Feng, Wei Tang.
-        <br>
-        <strong>SODA 2026: </strong>  
-        The 37th ACM-SIAM Symposium on Discrete Algorithms
-        <br>
-        <a href="papers/PersuasiveCalibration_SODA'26.pdf" style="text-decoration:none;color: #003399"> [conference version]</a>
-    </p>
-  </li> 
-
-
-  <li>
-    <p>   
-      <a href="" style="text-decoration:none;color: #003399"> 
-      No-Regret Online Autobidding Algorithms in First-price Auctions.</a>        
-        <br>
-      Yilin Li, Yuan Deng, Wei Tang, and Hanrui Zhang.
-      <br>
-        <strong>NeurIPS 2025: </strong> 
-        The 39th Conference on Neural Information Processing Systems
-      <br>
-    </p>
-    </p>
-  </li>
-
-  <li>
-    <p>   
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4950758" style="text-decoration:none;color: #003399"> 
-      Confusion Matrix Design for Downstream Decision-Making</a>        
-        <br>
-      <small>  (&#945-&#946). </small> Yiding Feng, Wei Tang.
-      <br>
-        <strong>ITCS 2025: </strong> 
-        The 16th Innovations in Theoretical Computer Science 
-      <br>
-    </p>
-    </p>
-  </li>
-
-  <li>
-    <p>   
-      <a href="https://arxiv.org/pdf/2409.18269" style="text-decoration:none;color: #003399"> 
-      Intrinsic Robustness of Prophet Inequality to Strategic Reward Signaling</a>        
-        <br>
-          <small>  (&#945-&#946). </small> Wei Tang, Haifeng Xu, Ruimin Zhang and Derek Zhu.
-        <br>
-        <strong>NeurIPS 2024: </strong> 
-        The 38th Conference on Neural Information Processing Systems
-        <br>
-    </p>
-  </li>
-
-
-  <li>
-    <p>   
-      <a href="https://arxiv.org/pdf/2402.12562.pdf" style="text-decoration:none;color: #003399"> 
-      Dynamic Pricing and Learning with Long-term Reference Effects</a>        
-        <br>
-          <small>  (&#945-&#946). </small> Shipra Agrawal, Wei Tang.
-        <br>
-        <strong>EC 2024: </strong> 
-        The 25th ACM conference on Economics and Computation
-        <br>
-        Major Revision   at <strong>Operations Research</strong>
-        <br>
-    </p>
-  </li>
-
-
-  <li>
-    <p>   
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4861024" style="text-decoration:none;color: #003399"> 
-      Competitive Information Design with Asymmetric Senders</a>        
-        <br>
-          <small>  (&#945-&#946). </small> Zhicheng Du, Wei Tang, Zihe Wang, and Shuo Zhang.
-        <br>
-        <strong>EC 2024: </strong> 
-        The 25th ACM conference on Economics and Computation
-        <br>
-        <a href="papers/AsymmetricCompet_EC'24.pdf" style="text-decoration:none;color: #003399"> [pdf]</a>
-    </p>
-  </li>
-
-  <li>
-    <p>    <a href="https://arxiv.org/pdf/2305.01094.pdf" style="text-decoration:none;color: #003399">  
-      
-      Performative Prediction with Bandit Feedback: Learning through Reparameterization </a>
-
-        <br>
-          Yatong Chen, Wei Tang, Chien-Ju Ho, and Yang Liu.
-        <br>
-        <strong>ICML 2024: </strong>  
-        The 41st International Conference on Machine Learning
-    </p>
-  </li>
-
-  <li>
-    <p>   <a href="https://arxiv.org/pdf/2207.08253.pdf" style="text-decoration:none;color: #003399">  
-      
-      Rationality-Robust Information Design: Bayesian Persuasion under Quantal Response</a>
-        <br>
-          <small>  (&#945-&#946). </small> Yiding Feng, Chien-Ju Ho, and Wei Tang.   
-        <br>
-        <strong>SODA 2024: </strong>  
-        The 35th ACM-SIAM Symposium on Discrete Algorithms
-        <br>
-        <small>  Accepted for presentation at the 34th Stony Brook International Conference on Game Theory, 
-        July 2023 </small>
-        <br>
-        <small>  Accepted for presentation at the 2024 Behavioral Decision Research in Management (BDRM) conference, 
-        June 2024 </small>
-        <br>
-    </p>
-  </li>
-
-
-  <li>
-    <p>   <a href="https://arxiv.org/pdf/2304.14385v3" style="text-decoration:none;color: #003399">  
-      Dynamic Pricing and Advertising with Demand Learning</a> 
-        <br>
-          <small>  (&#945-&#946). </small> Shipra Agrawal, Yiding Feng, and Wei Tang.
-        <br>
-        <strong>NeurIPS 2023: </strong>  
-        The 37th Conference on Neural Information Processing Systems
-        <br>
-        <a href="https://www.youtube.com/watch?v=OQ0YuUhjA98" style="text-decoration:none;color: #003399"> [Talk by Shipra]</a>
-        <br>
-        Revise and Resubmit <strong>Management Science</strong>
-        <br>
-    </p>
-  </li>
-
-
-  <li>
-    <p>  
-      <a href="papers/BehavioralInformationDesign_NeurIPS'23.pdf" style="text-decoration:none;color: #003399">  
-      Encoding Human Behavior in Information Design through Deep Learning</a> 
-        <br>
-          Guanghui Yu, Wei Tang, Saumik Narayanan, and Chien-Ju Ho.
-        <br>
-        <strong>NeurIPS 2023: </strong>  
-        The 37th Conference on Neural Information Processing Systems 
-    </p>
-  </li>
-
-
-  <li>
-    <p>   
-      <a href="https://arxiv.org/pdf/2103.03769.pdf" style="text-decoration:none;color: #003399">  Competitive Information Design for Pandora's Box</a> 
-        <br>
-          <small>  (&#945-&#946). </small> Bolin Ding, Yiding Feng, Chien-Ju Ho, Wei Tang, and Haifeng Xu. 
-        <br>
-        <strong>SODA 2023: </strong>  
-        The 34th ACM-SIAM Symposium on Discrete Algorithms
-<!--         <br>
-          Under preparation for <i>Mathematics of Operations Research</i>
-        <br> -->
-        <br>
-        <small> Accepted for presentation at Marketplace Innovation Workshop (MIW), May 2023 </small>
-    </p>
-  </li>
-
-
-  <li>
-    <p>  
-      <a href="papers/BayesianRecommendation'23.pdf" style="text-decoration:none;color: #003399"> Online Bayesian Recommendation with No Regret </a> 
-        <br>
-          <small>  (&#945-&#946). </small> Yiding Feng, Wei Tang, and Haifeng Xu. 
-        <br>
-        <strong>EC 2022: </strong> 
-        The 23rd ACM conference on Economics and Computation
-        <br>
-        Minor Revision   at <strong>Operations Research</strong>
-        <br>
-        <small>  Accepted for regular session presentation at the INFORMS Revenue Management and Pricing conference, June 2022 </small>
-        <br>
-        <small> Accepted for poster presentation at Marketplace Innovation Workshop (MIW), May 2022 </small>
-    </p>
-  </li>
-
-
-  <li>
-    <p>  <a href="https://chienjuho.com/pub/AIES22_EthicalPreferenceElicitation.pdf" style="text-decoration:none;color: #003399"> 
-      How Does Predictive Information Affect Human Ethical Preferences?  </a> 
-        <br>
-        Saumik Narayanan, Guanghui Yu, Wei Tang, Chien-Ju Ho, and Ming Yin.
-        <br>
-        <strong>AIES 2022: </strong>
-        The 5th AAAI/ACM Conference on AI, Ethics, and Society
-    </p>
-
-  </li>
-
-
-  <li>
-    <p>  <a href="https://arxiv.org/pdf/2002.10316.pdf" style="text-decoration:none;color: #003399"> Bandit Learning with Delayed Impact of Actions  </a> 
-        <br>
-        Wei Tang, Chien-Ju Ho, Yang Liu. 
-        <br>
-        <strong>NeurIPS 2021: </strong>
-        The 35th Conference on Neural Information Processing Systems 
-    </p>
-
-  </li>
-
-
-  <li>
-    <p>  <a href="papers/prior_impact_CR.pdf" style="text-decoration:none;color: #003399"> On the Bayesian Rational Assumption in Information Design </a> 
-        <br>
-        Wei Tang, Chien-Ju Ho.
-        <br>
-        <strong>HCOMP 2021: </strong> 
-        The 9th AAAI Conference on Human Computation and Crowdsourcing
-        <br>
-        <!-- <strong> Best Paper Honorable Mention </strong> -->
-        <a style="text-decoration:none;color: #AC2206"> Best Paper Honorable Mention </a>
-    </p>
-
-  </li>
-
-
-  <li>
-    <p>  <a href="papers/linear_robustness_full.pdf" style="text-decoration:none;color: #003399"> Linear Models are Robust Optimal Under Strategic Behavior </a> 
-        <br>
-        Wei Tang, Chien-Ju Ho, and Yang Liu.
-        <br>
-        <strong>AISTATS 2021: </strong>
-        The 24th International Conference on Artificial Intelligence and Statistics 
-    </p>
-
-  </li>
-
-
-  <li>
-    <p>  
-        <a href="papers/secure_privacy_NeurIPS'20.pdf" style="text-decoration:none;color: #003399"> Optimal Query Complexity of Secure Stochastic Convex Optimization</a> 
-        
-        <br>
-        Wei Tang, Chien-Ju Ho, and Yang Liu.
-        <br>
-         <strong>NeurIPS 2020: </strong> 
-         The 34th Conference on Neural Information Processing Systems 
-         <!-- NeurIPS 2020 -->
-    </p>
-  </li>
-
-
-  <li>
-    <p>   
-        <a href="papers/private-pricing_AAMAS20.pdf" style="text-decoration:none;color: #003399"> Differentially Private Contextual Dynamic Pricing </a>
-        
-        <br>
-        Wei Tang, Chien-Ju Ho, and Yang Liu.
-        <br>
-         <strong>AAMAS 2020: </strong>  
-         The 19th International Conference on Autonomous Agents and Multiagent Systems 
-        <br>
-         <a href="papers/private_pricing.pdf" style="text-decoration:none;color: #003399"> [full version]</a>
-         <a href="papers/private_pricing_slides.pdf" style="text-decoration:none;color: #003399"> [slides]</a> 
-        <br>
-    </p>
-  </li>
-
-  <li>
-    <p>  
-        <a href="papers/PeerCommunication_WWW19.pdf" style="text-decoration:none;color: #003399"> Leveraging Peer Communication to Enhance Crowdsourcing </a>
-        <br>
-        Wei Tang, Chien-Ju Ho, Ming Yin. 
-        <br>
-        <strong>WWW 2019: </strong>  
-        The Web Conference 
-         <!-- WWW 2019 -->
-        <br> 
-        <a href="papers/PeerCommunication_poster.pdf" style="text-decoration:none;color: #003399"> [poster]</a>
-        <br>
-    </p>
-  </li>
-
-  <li>
-    <p> 
-        <a href="papers/biased_bandit_AAMAS_19.pdf" style="text-decoration:none;color: #003399"> Bandit Learning with Biased Human Feedback</a> 
-        <br>
-        Wei Tang, Chien-Ju Ho. 
-        <br>
-        <strong>AAMAS 2019: </strong>  
-        The 18th International Conference on Autonomous Agents and Multiagent Systems 
-         <!-- AAMAS 2019 -->
-        <br>
-        <small> Presented as the contributed talk at The first Workshop on Behavioral EC, June 2019. </small>
-        <br>
-         
-         <a href="papers/biased_bandit_FULL.pdf" style="text-decoration:none;color: #003399"> [full version]</a>
-         <a href="papers/biased_bandit_slides.pdf" style="text-decoration:none;color: #003399"> [slides]</a>
-         <a href="papers/biased_bandit_poster.pdf" style="text-decoration:none;color: #003399"> [poster]</a>
-        <br>
-    </p>
-  </li>
-
-  <!-- ========================= -->
-<!--   <li id="ellipsis-li">
-    <span id="dots">...</span>
-    <a href="javascript:void(0)" id="show-more" style="text-decoration:none;color: #003399;">Show more</a>
-  </li> -->
-
-  <span id="more-papers" style="display:none;">
-
-  <li> 
-    <a href="https://academic.oup.com/bioinformatics/article/34/3/398/4265460" style="text-decoration:none;color: #003399"> Tumor origin detection with tissue-specific miRNA and DNA methylation markers</a> 
-    <br>
-    Wei Tang, Shixiang Wan, Zhen Yang, Andrew E. Teschendorff, Quan Zou.
-    <br>
-    <!-- <i> -->
-      Bioinformatics
-    <!-- </i> -->
-    , 2018.
-    <br>
-  </li>
-
-  <p></p> 
-
-
-
-  <li>
-     <a href="https://academic.oup.com/nar/article/45/D1/D812/2605694" style="text-decoration:none;color: #003399"> dbDEMC 2.0: updated database of differentially expressed miRNAs in human cancers</a> 
-      <br>
-        Zhen Yang, Liangcai Wu, Anqiang Wang, Wei Tang, Yi Zhao, Haitao Zhao, Andrew E Teschendorff.
-      <br>
-      <!-- <i> -->
-        Nucleic acids research
-      <!-- </i> -->
-        , 2017.
-      <br>
-  </li>
-
-  <p></p> 
-
-  <li>
-  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5356763/" style="text-decoration:none;color: #003399"> Which statistical significance test best detects oncomiRNAs in cancer tissues? An exploratory analysis</a>
-      <br>
-      Wei Tang, Zhijun Liao, Quan Zou
-      <br>
-      <!-- <i> -->
-      Oncotarget
-      <!-- </i> -->
-      , 2016. 
-      <br>
-  </li>
-  </span>
-
-
-</ul>
-
-  <li id="ellipsis-li" style="list-style-type:none; margin-left: 1.5em;"> 
-    <span id="dots">...</span> 
-  <a href="javascript:void(0)" id="show-more" style="text-decoration:none;color: #003399;">Show more
-  </a>
-  </li>
-
-<script>
-  const dots = document.getElementById("dots");
-  const morePapers = document.getElementById("more-papers");
-  const showMoreLink = document.getElementById("show-more");
-
-  showMoreLink.addEventListener("click", function() {
-    if (morePapers.style.display === "none") {
-      dots.style.display = "none";
-      morePapers.style.display = "inline";
-      showMoreLink.innerHTML = "Show less";
-    } else {
-      dots.style.display = "inline";
-      morePapers.style.display = "none";
-      showMoreLink.innerHTML = "Show more";
-    }
-  });
-</script>
-
-
-
-<!-- ============================================================ -->
-<div id = "service">
-  <h2><strong ><font face='Helvetica'> Services</h2> </strong >
-  Conference Program Committees (or Formal Reviewer):<br>
-  <ul class="no-bullets">
-    <li>2024: ICML, EC, NeurIPS, SODA, ISAAC</li>
-    <li>2023: FAccT, ICML, NeurIPS</li>
-    <li>2022: ICLR, ICML, FAccT, UAI, SAGT, NeurIPS, WINE</li>
-    <li>2021: AAMAS, AAAI, AISTATS, NeurIPS</li>
-  </ul>
-  Journal Referee: 
-  <ul class="w-bullets">
-    <li>Journal of Machine Learning Research (JMLR), Machine Learning Journal (MLJ), ACM Transactions on Economics and Computation (TEAC)</li>
-    <li>Operations Research (OR), 
-    Manufacturing & Service Operations Management (MSOM)
-    </li>
-    <li>Games and Economic Behavior (GEB)</li>
-    <li>Journal of the American Statistical Association (JASA)</li>
-  </ul>
-</div>
-
-
-<!-- ============================================================ -->
-<div id = "misc">
-<h2><strong ><font face='Helvetica'>  Misc.</h2> </strong >
-</div>
-It's also been my good fortune to be working with: 
-<a href="https://yatongchen.github.io/" style="text-decoration:none;color: #003399"> Yatong Chen</a>,
-<a href="http://www.bolin-ding.com/" style="text-decoration:none;color: #003399"> Bolin Ding</a>,
-<a href="https://www.ydfeng.us/" style="text-decoration:none;color: #003399"> Yiding Feng</a>,
-<a href="https://jiang-puping.github.io/" style="text-decoration:none;color: #003399"> Puping Jiang</a>,
-<a href="http://www.yliuu.com/" style="text-decoration:none;color: #003399"> Yang Liu</a>,
-<a href="https://saumikn.com/" style="text-decoration:none;color: #003399"> Saumik Narayanan</a>,
-<a href="https://gsai.ruc.edu.cn/english/wangzihe" style="text-decoration:none;color: #003399"> Zihe Wang</a>,
-<a href="https://www.haifeng-xu.com/" style="text-decoration:none;color: #003399"> Haifeng Xu</a>,
-<a href="http://mingyin.org/" style="text-decoration:none;color: #003399"> Ming Yin</a>,
-<a href="https://augustusyu.github.io/guanghuiyu.github.io/" style="text-decoration:none;color: #003399"> Guanghui Yu</a>.
-
-
-<!-- <small>  (&#945-&#946 order) </small> -->
-
-<br>
-<br>
-</div>
-
-</font>
+<body>
+  <main>
+    <header class="site-header">
+      <div>
+        <h1>Wei Tang</h1>
+        <p>
+          Assistant Professor<br>
+          Department of Decisions, Operations and Technology<br>
+          Chinese University of Hong Kong
+        </p>
+        <p>
+          Email: weitang at cuhk dot edu dot hk
+        </p>
+      </div>
+      <img class="portrait" src="img/profile_web.png" alt="Wei Tang">
+    </header>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#working-papers">Working papers</a></li>
+        <li><a href="#journal-papers">Journal</a> / <a href="#conference-papers">Conference papers</a></li>
+        <li><a href="#service">Tutorial / Service</a></li>
+        <li><a href="#misc">Misc.</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am an assistant professor in the Department of Decisions, Operations and Technology at the
+        Chinese University of Hong Kong. Before this, I was a postdoctoral fellow at the
+        <a href="https://datascience.columbia.edu">Data Science Institute</a>,
+        <a href="https://www.columbia.edu">Columbia University</a>, mentored by
+        <a href="http://www.columbia.edu/~sa3305/">Shipra Agrawal</a>. I completed my Ph.D. in
+        Computer Science at <a href="http://www.wustl.edu">Washington University in St. Louis</a>,
+        where I was fortunate to be advised by <a href="http://chienjuho.com/">Chien-Ju Ho</a>.
+        I received my bachelor's degree from <a href="http://www.tju.edu.cn/english/">Tianjin University</a>, China.
+      </p>
+
+      <p>
+        I am interested in the theoretical aspects of <strong>agentic decision-making</strong>, where
+        humans, algorithms, or both act as decision-makers. A typical question I explore is how to
+        efficiently and effectively design or provide information and predictions to help humans and
+        algorithms make desired decisions in complex environments.<br>
+        My interests include sequential decision-making under uncertainty, reinforcement learning,
+        information design, socially responsible machine learning, and human-AI interaction. My research
+        spans machine learning, algorithmic economics, and behavioral and social sciences.
+      </p>
+
+      <p>
+        <strong>Prospective students:</strong> I am looking for students. If you are interested in
+        working with me, please send me an email with your CV.
+      </p>
+    </section>
+
+    <section id="news">
+      <h2>What's New?</h2>
+      <ul>
+        <li>
+          <span class="date">[12/2025]:</span> I am attending NeurIPS 2025, San Diego. After that, I am
+          attending <a href="https://wine2025.cs.rutgers.edu/">WINE 2025</a>, where we are organizing a
+          tutorial on
+          <a href="https://sites.google.com/view/infor-design-calibration/home">Information Design Perspective on Calibration</a>.
+        </li>
+        <li>
+          <span class="date">[10/2024]:</span> Works to be presented at INFORMS 2024: dynamic pricing with
+          long-term reference effects, rationality-robust information design, and dynamic pricing with
+          Bayesian persuasion.
+        </li>
+        <li>
+          <span class="date">[09/2024]:</span> Check our new working paper on
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4950758">confusion matrix design for downstream decision-making</a>
+          and the recent NeurIPS 2024 work on
+          <a href="https://arxiv.org/pdf/2409.18269">the robustness of Prophet inequality to strategic reward signaling</a>.
+        </li>
+        <!-- <li>
+          <span class="date">[05/2024]:</span> Check our recent works on
+          <a href="https://arxiv.org/pdf/2402.12562.pdf">dynamic pricing with long-term reference effects</a>
+          and
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4861024">competitive information design when senders have prior heterogeneity</a>.
+        </li> -->
+      </ul>
+    </section>
+
+    <section id="working-papers">
+      <h2>Working Papers</h2>
+      <ul class="papers">
+        <li>
+          <a href="https://arxiv.org/pdf/2604.24530">Private Private Information in Second-Price Auction</a><br>
+          <span class="authors">(α-β). Boyu Liu, Wei Tang, Zihe Wang, and Shuo Zhang.</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2604.24517">Prior-Agnostic Robust Forecast Aggregation</a><br>
+          <span class="authors">(α-β). Zhi Chen, Cheng Peng, and Wei Tang.</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2602.01066">Simple and Robust Quality Disclosure: The Power of Quantile Partition</a><br>
+          <span class="authors">(α-β). Shipra Agrawal, Yiding Feng, and Wei Tang.</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2602.10483">Pricing Query Complexity of Multiplicative Revenue Approximation</a><br>
+          <span class="authors">(α-β). Wei Tang, Yifan Wang, and Mengxiao Zhang.</span>
+          <br>
+          To be Presented at <a href="https://www.econometricsociety.org/regional-activities/schedule/2026/06/16/2026-ESIFEconomics-and-AIML-Meeting#home">
+          ESIF-AIML 2026.</a>
+        </li>
+        <li>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5397901">Explainable Information Design</a><br>
+          <span class="authors">(α-β). Yiling Chen, Tao Lin, Wei Tang, and Jamie Tucker-Foltz.</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2507.17187">Optimal Calibrated Signaling in Digital Auctions</a><br>
+          <span class="authors">(α-β). Zhicheng Du, Wei Tang, Zihe Wang, and Shuo Zhang.</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2507.12094">Is This Predictor More Informative than Another? A Decision-Theoretical Comparison</a><br>
+          <span class="authors">(α-β). Yiding Feng, Liuhan Qian, and Wei Tang.</span>
+          <br>
+          To be Presented at <a href="https://www.econometricsociety.org/regional-activities/schedule/2026/06/16/2026-ESIFEconomics-and-AIML-Meeting#home">
+          ESIF-AIML 2026.</a>
+        </li>
+        <li>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5150007">Simple Delay-Oblivious Policies Are Robust: Overbooking with Delayed Purchases</a><br>
+          <span class="authors">(α-β). Yiding Feng, Puping Jiang, and Wei Tang.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="journal-papers">
+      <h2>Journal Paper</h2>
+      <ul class="papers">
+        <li>
+          <a href="https://arxiv.org/pdf/2202.06135">No-Regret Bayesian Recommendation to Homogeneous Users</a><br>
+          <span class="authors">(α-β) Yiding Feng, Wei Tang, and Haifeng Xu.</span><br>
+          <strong>Operations Research (OR) 2026.</strong>
+        </li>
+      </ul>
+    </section>
+
+    <section id="conference-papers">
+      <h2>Conference Papers</h2>
+      <ul class="papers">
+        <li>
+          <a href="https://arxiv.org/pdf/2504.03211">Persuasive Calibration</a><br>
+          <span class="authors">(α-β). Yiding Feng and Wei Tang.</span><br>
+          <strong>SODA 2026:</strong> The 37th ACM-SIAM Symposium on Discrete Algorithms.
+          <a href="papers/PersuasiveCalibration_SODA'26.pdf">[conference version]</a>
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2510.16869">
+          No-Regret Online Autobidding Algorithms in First-price Auctions</a> <br>
+          <span class="authors">Yilin Li, Yuan Deng, Wei Tang, and Hanrui Zhang.</span><br>
+          <strong>NeurIPS 2025:</strong> The 39th Conference on Neural Information Processing Systems.
+        </li>
+        <li>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4950758">Confusion Matrix Design for Downstream Decision-Making</a><br>
+          <span class="authors">(α-β). Yiding Feng and Wei Tang.</span><br>
+          <strong>ITCS 2025:</strong> The 16th Innovations in Theoretical Computer Science.
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2409.18269">Intrinsic Robustness of Prophet Inequality to Strategic Reward Signaling</a><br>
+          <span class="authors">(α-β). Wei Tang, Haifeng Xu, Ruimin Zhang, and Derek Zhu.</span><br>
+          <strong>NeurIPS 2024:</strong> The 38th Conference on Neural Information Processing Systems.
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2402.12562.pdf">Dynamic Pricing and Learning with Long-term Reference Effects</a><br>
+          <span class="authors">(α-β). Shipra Agrawal and Wei Tang.</span><br>
+          <strong>EC 2024:</strong> The 25th ACM Conference on Economics and Computation. 
+          <br> Major revision at
+          <strong>Operations Research</strong>.
+        </li>
+        <li>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4861024">Competitive Information Design with Asymmetric Senders</a><br>
+          <span class="authors">(α-β). Zhicheng Du, Wei Tang, Zihe Wang, and Shuo Zhang.</span><br>
+          <strong>EC 2024:</strong> The 25th ACM Conference on Economics and Computation.
+          <a href="papers/AsymmetricCompet_EC'24.pdf">[pdf]</a>
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2305.01094.pdf">Performative Prediction with Bandit Feedback: Learning through Reparameterization</a><br>
+          <span class="authors">Yatong Chen, Wei Tang, Chien-Ju Ho, and Yang Liu.</span><br>
+          <strong>ICML 2024:</strong> The 41st International Conference on Machine Learning.
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2207.08253.pdf">Rationality-Robust Information Design: Bayesian Persuasion under Quantal Response</a><br>
+          <span class="authors">(α-β). Yiding Feng, Chien-Ju Ho, and Wei Tang.</span><br>
+          <strong>SODA 2024:</strong> The 35th ACM-SIAM Symposium on Discrete Algorithms.<br>
+          Accepted for presentation at the 34th Stony Brook International Conference on Game Theory and
+          the 2024 Behavioral Decision Research in Management conference.
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2304.14385v3">Dynamic Pricing and Advertising with Demand Learning</a><br>
+          <span class="authors">(α-β). Shipra Agrawal, Yiding Feng, and Wei Tang.</span><br>
+          <strong>NeurIPS 2023:</strong> The 37th Conference on Neural Information Processing Systems.
+          <a href="https://www.youtube.com/watch?v=OQ0YuUhjA98">[talk by Shipra]</a>
+          <br>
+          Revise and resubmit, <strong>Management Science</strong>.
+        </li>
+        <li>
+          <a href="papers/BehavioralInformationDesign_NeurIPS'23.pdf">Encoding Human Behavior in Information Design through Deep Learning</a><br>
+          <span class="authors">Guanghui Yu, Wei Tang, Saumik Narayanan, and Chien-Ju Ho.</span><br>
+          <strong>NeurIPS 2023:</strong> The 37th Conference on Neural Information Processing Systems.
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2103.03769.pdf">Competitive Information Design for Pandora's Box</a><br>
+          <span class="authors">(α-β). Bolin Ding, Yiding Feng, Chien-Ju Ho, Wei Tang, and Haifeng Xu.</span><br>
+          <strong>SODA 2023:</strong> The 34th ACM-SIAM Symposium on Discrete Algorithms.
+        </li>
+        <li>
+          <a href="papers/BayesianRecommendation'23.pdf">Online Bayesian Recommendation with No Regret</a><br>
+          <span class="authors">(α-β). Yiding Feng, Wei Tang, and Haifeng Xu.</span><br>
+          <strong>EC 2022:</strong> The 23rd ACM Conference on Economics and Computation.
+        </li>
+        <li>
+          <a href="https://chienjuho.com/pub/AIES22_EthicalPreferenceElicitation.pdf">How Does Predictive Information Affect Human Ethical Preferences?</a><br>
+          <span class="authors">Saumik Narayanan, Guanghui Yu, Wei Tang, Chien-Ju Ho, and Ming Yin.</span><br>
+          <strong>AIES 2022:</strong> The 5th AAAI/ACM Conference on AI, Ethics, and Society.
+        </li>
+        <li>
+          <a href="https://arxiv.org/pdf/2002.10316.pdf">Bandit Learning with Delayed Impact of Actions</a><br>
+          <span class="authors">Wei Tang, Chien-Ju Ho, and Yang Liu.</span><br>
+          <strong>NeurIPS 2021:</strong> The 35th Conference on Neural Information Processing Systems.
+        </li>
+        <li>
+          <a href="papers/prior_impact_CR.pdf">On the Bayesian Rational Assumption in Information Design</a><br>
+          <span class="authors">Wei Tang and Chien-Ju Ho.</span><br>
+          <strong>HCOMP 2021:</strong> The 9th AAAI Conference on Human Computation and Crowdsourcing.
+          <br>
+          <span class="award">Best Paper Honorable Mention.</span>
+        </li>
+        <li>
+          <a href="papers/linear_robustness_full.pdf">Linear Models are Robust Optimal Under Strategic Behavior</a><br>
+          <span class="authors">Wei Tang, Chien-Ju Ho, and Yang Liu.</span><br>
+          <strong>AISTATS 2021:</strong> The 24th International Conference on Artificial Intelligence and Statistics.
+        </li>
+        <li>
+          <a href="papers/secure_privacy_NeurIPS'20.pdf">Optimal Query Complexity of Secure Stochastic Convex Optimization</a><br>
+          <span class="authors">Wei Tang, Chien-Ju Ho, and Yang Liu.</span><br>
+          <strong>NeurIPS 2020:</strong> The 34th Conference on Neural Information Processing Systems.
+        </li>
+        <li>
+          <a href="papers/private-pricing_AAMAS20.pdf">Differentially Private Contextual Dynamic Pricing</a><br>
+          <span class="authors">Wei Tang, Chien-Ju Ho, and Yang Liu.</span><br>
+          <strong>AAMAS 2020:</strong> The 19th International Conference on Autonomous Agents and Multiagent Systems.
+          <a href="papers/private_pricing.pdf">[full version]</a>
+          <a href="papers/private_pricing_slides.pdf">[slides]</a>
+        </li>
+        <li>
+          <a href="papers/PeerCommunication_WWW19.pdf">Leveraging Peer Communication to Enhance Crowdsourcing</a><br>
+          <span class="authors">Wei Tang, Chien-Ju Ho, and Ming Yin.</span><br>
+          <strong>WWW 2019:</strong> The Web Conference.
+          <a href="papers/PeerCommunication_poster.pdf">[poster]</a>
+        </li>
+        <li>
+          <a href="papers/biased_bandit_AAMAS_19.pdf">Bandit Learning with Biased Human Feedback</a><br>
+          <span class="authors">Wei Tang and Chien-Ju Ho.</span><br>
+          <strong>AAMAS 2019:</strong> The 18th International Conference on Autonomous Agents and Multiagent Systems.
+          <br>
+          Presented as a contributed talk at the first Workshop on Behavioral EC.
+          <a href="papers/biased_bandit_FULL.pdf">[full version]</a>
+          <a href="papers/biased_bandit_slides.pdf">[slides]</a>
+          <a href="papers/biased_bandit_poster.pdf">[poster]</a>
+        </li>
+        <li class="hidden-paper">
+          <a href="https://academic.oup.com/bioinformatics/article/34/3/398/4265460">Tumor origin detection with tissue-specific miRNA and DNA methylation markers</a><br>
+          <span class="authors">Wei Tang, Shixiang Wan, Zhen Yang, Andrew E. Teschendorff, and Quan Zou.</span><br>
+          Bioinformatics, 2018.
+        </li>
+        <li class="hidden-paper">
+          <a href="https://academic.oup.com/nar/article/45/D1/D812/2605694">dbDEMC 2.0: updated database of differentially expressed miRNAs in human cancers</a><br>
+          <span class="authors">Zhen Yang, Liangcai Wu, Anqiang Wang, Wei Tang, Yi Zhao, Haitao Zhao, and Andrew E. Teschendorff.</span><br>
+          Nucleic Acids Research, 2017.
+        </li>
+        <li class="hidden-paper">
+          <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5356763/">Which statistical significance test best detects oncomiRNAs in cancer tissues? An exploratory analysis</a><br>
+          <span class="authors">Wei Tang, Zhijun Liao, and Quan Zou.</span><br>
+          Oncotarget, 2016.
+        </li>
+        <li id="ellipsis-li" class="publication-toggle">
+          <span id="dots">...</span>
+          <a href="#" id="show-more">Show more</a>
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      const dots = document.getElementById("dots");
+      const morePapers = document.querySelectorAll(".hidden-paper");
+      const showMoreLink = document.getElementById("show-more");
+
+      showMoreLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        const isCollapsed = morePapers[0].style.display !== "list-item";
+
+        morePapers.forEach(function(paper) {
+          paper.style.display = isCollapsed ? "list-item" : "none";
+        });
+
+        if (isCollapsed) {
+          dots.style.display = "none";
+          showMoreLink.innerHTML = "Show less";
+        } else {
+          dots.style.display = "inline";
+          showMoreLink.innerHTML = "Show more";
+        }
+      });
+    </script>
+
+
+
+    <section id="service">
+      <h2>Tutorial / Service</h2>
+      <ul>
+        <li>
+          Tutorials
+          <ul>
+            <li>EC 2026: 
+               <a href="https://sites.google.com/view/cali-infor-design/home">Information Design Perspective on Calibration</a>
+            </li>
+            <li>WINE 2025: 
+               <a href="https://sites.google.com/view/infor-design-calibration/home">Information Design Perspective on Calibration</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Conference reviewers
+          <ul>
+            <li>2026: STOC, ICML.</li>
+            <li>2025: SODA, AISTATS, ICML, EC (PC), NeurIPS, WINE (PC).</li>
+            <li>2024: ICML, EC (PC), NeurIPS, SODA, ISAAC.</li>
+            <li>2023: FAccT, ICML, NeurIPS.</li>
+            <li>2022: ICLR, ICML, FAccT, UAI, SAGT, NeurIPS, WINE.</li>
+            <li>2021: AAMAS, AAAI, AISTATS, NeurIPS.</li>
+          </ul>
+        </li>
+        <li>
+          Journal referee
+          <ul>
+            <li>Journal of Machine Learning Research, 
+              Machine Learning Journal, 
+              Transactions on Machine Learning Research, 
+              ACM Transactions on Economics and Computation,
+              Autonomous Agents and Multi-Agent Systems</li>
+            <li>Management Science, 
+              Operations Research, 
+              Production and Operations Management,
+              Manufacturing &amp; Service Operations Management,
+            </li>
+            <li>Games and Economic Behavior.</li>
+            <li>Journal of the American Statistical Association.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="misc">
+      <h2>Misc.</h2>
+      <p>
+        It has also been my good fortune to work with
+        <a href="https://yatongchen.github.io/">Yatong Chen</a>,
+        <a href="http://www.bolin-ding.com/">Bolin Ding</a>,
+        <a href="https://www.ydfeng.us/">Yiding Feng</a>,
+        <a href="https://jiang-puping.github.io/">Puping Jiang</a>,
+        <a href="http://www.yliuu.com/">Yang Liu</a>,
+        <a href="https://saumikn.com/">Saumik Narayanan</a>,
+        <a href="https://gsai.ruc.edu.cn/english/wangzihe">Zihe Wang</a>,
+        <a href="https://www.haifeng-xu.com/">Haifeng Xu</a>,
+        <a href="http://mingyin.org/">Ming Yin</a>, and
+        <a href="https://augustusyu.github.io/guanghuiyu.github.io/">Guanghui Yu</a>.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
-
