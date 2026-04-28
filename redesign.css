@@ -36,6 +36,11 @@ p {
   margin: 1em 0;
 }
 
+.site-header p {
+  position: relative;
+  top: 0.9em;
+}
+
 .site-header {
   align-items: flex-start;
   display: flex;
@@ -46,23 +51,27 @@ p {
 
 .site-header > div {
   flex: 0 1 auto;
+  margin-top: 1.15em;
   text-align: left;
 }
 
 h1 {
   color: #333;
-  font-size: 2em;
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.75em;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 1.2;
-  margin: 0.67em 0;
+  margin: 0 0 -0.1em;
+  position: relative;
+  top: 0.48em;
 }
 
 .portrait {
   border: 0;
   height: auto;
   margin-top: 1em;
-  margin-right: 120px;
+  margin-right: 72px;
   max-width: 175px;
 }
 
