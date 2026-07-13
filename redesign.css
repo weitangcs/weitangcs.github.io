@@ -133,6 +133,10 @@ li li {
   margin-bottom: 0.2em;
 }
 
+.slides-list {
+  margin-top: 0.25em;
+}
+
 .papers li {
   margin-bottom: 1em;
 }
